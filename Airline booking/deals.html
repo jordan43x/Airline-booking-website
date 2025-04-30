@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Deals - SkyWay Airlines</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><i class="fas fa-plane"></i> SkyWay Airlines</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="flights.html">Flights</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="deals.html" class="active">Deals</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html" class="cta-button">Sign Up</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <div class="page-banner" style="background-image: url('assets/img/deals-banner.jpg')">
+        <div class="banner-content">
+            <h1>Special Deals & Offers</h1>
+            <p>Exclusive discounts and promotions on flights around the world</p>
+        </div>
+    </div>
+
+    <div class="page-container">
+        <section class="deals-filter">
+            <div class="container">
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all">All Deals</button>
+                    <button class="filter-tab" data-filter="flash">Flash Sales</button>
+                    <button class="filter-tab" data-filter="seasonal">Seasonal</button>
+                    <button class="filter-tab" data-filter="package">Package Deals</button>
+                    <button class="filter-tab" data-filter="member">Member Exclusive</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="countdown-timer">
+            <div class="container">
+                <div class="countdown-container">
+                    <div class="countdown-text">
+                        <h3>Summer Flash Sale Ends In:</h3>
+                    </div>
+                    <div class="countdown" id="deal-countdown">
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="days">02</span>
+                            <span class="countdown-label">Days</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="hours">18</span>
+                            <span class="countdown-label">Hours</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="minutes">45</span>
+                            <span class="countdown-label">Minutes</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="seconds">32</span>
+                            <span class="countdown-label">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="deals-section">
+            <div class="container">
+                <h2 class="section-title">Featured Deals</h2>
+                <div class="deals-grid">
+                    <!-- Flash Sale Deals -->
+                    <div class="deal-card" data-category="flash">
+                        <div class="deal-badge">Flash Sale</div>
+                        <div class="deal-img" style="background-image: url('assets/img/flight-feature-1.jpg')"></div>
+                        <div class="deal-info">
+                            <div class="deal-destination">
+                                <h3>New York to Paris</h3>
+                                <div class="deal-dates">Valid: Jun 15 - Aug 30, 2023</div>
+                            </div>
+                            <div class="deal-price">
+                                <div class="original-price">$899</div>
+                                <div class="sale-price">$499</div>
+                                <div class="discount-tag">45% OFF</div>
+                            </div>
+                            <p class="deal-description">Experience the city of love with our limited-time flash sale. Round-trip flights at an unbeatable price!</p>
+                            <a href="#" class="btn">Book Now</a>
+                        </div>
+                    </div>
+                    
+                    <div class="deal-card" data-category="flash">
+                        <div class="deal-badge">Flash Sale</div>
+                        <div class="deal-img" style="background-image: url('assets/img/flight-feature-2.jpg')"></div>
+                        <div class="deal-info">
+                            <div class="deal-destination">
+                                <h3>Los Angeles to Tokyo</h3>
+                                <div class="deal-dates">Valid: Jul 1 - Sep 15, 2023</div>
+                            </div>
+                            <div class="deal-price">
+                                <div class="original-price">$1299</div>
+                                <div class="sale-price">$799</div>
+                                <div class="discount-tag">38% OFF</div>
+                            </div>
+                            <p class="deal-description">Explore Japan's vibrant capital with our special summer flash sale. Limited seats available!</p>
+                            <a href="#" class="btn">Book Now</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Seasonal Deals -->
+                    <div class="deal-card" data-category="seasonal">
+                        <div class="deal-badge">Summer Special</div>
+                        <div class="deal-img" style="background-image: url('assets/img/flight-feature-3.jpg')"></div>
+                        <div class="deal-info">
+                            <div class="deal-destination">
+                                <h3>London to Santorini</h3>
+                                <div class="deal-dates">Valid: Jun 1 - Sep 30, 2023</div>
+                            </div>
+                            <div class="deal-price">
+                                <div class="original-price">$749</div>
+                                <div class="sale-price">$549</div>
+                                <div class="discount-tag">27% OFF</div>
+                            </div>
+                            <p class="deal-description">Enjoy the beautiful Greek islands this summer with our seasonal discount on direct flights.</p>
+                            <a href="#" class="btn">Book Now</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Package Deals -->
+                    <div class="deal-card" data-category="package">
+                        <div class="deal-badge">Package Deal</div>
+                        <div class="deal-img" style="background-image: url('assets/img/feature-d-4.jpg')"></div>
+                        <div class="deal-info">
+                            <div class="deal-destination">
+                                <h3>Bali Getaway Package</h3>
+                                <div class="deal-dates">Valid: Any date in 2023</div>
+                            </div>
+                            <div class="deal-price">
+                                <div class="original-price">$1899</div>
+                                <div class="sale-price">$1299</div>
+                                <div class="discount-tag">32% OFF</div>
+                            </div>
+                            <p class="deal-description">Flight + 7 nights at a 5-star resort + airport transfers. The ultimate Bali experience!</p>
+                            <a href="#" class="btn">Book Now</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Member Exclusive -->
+                    <div class="deal-card" data-category="member">
+                        <div class="deal-badge">Members Only</div>
+                        <div class="deal-img" style="background-image: url('assets/img/flight-feature-4.jpg')"></div>
+                        <div class="deal-info">
+                            <div class="deal-destination">
+                                <h3>Maldives Luxury Escape</h3>
+                                <div class="deal-dates">Valid: Sep 1 - Dec 15, 2023</div>
+                            </div>
+                            <div class="deal-price">
+                                <div class="original-price">$2499</div>
+                                <div class="sale-price">$1699</div>
+                                <div class="discount-tag">32% OFF</div>
+                            </div>
+                            <p class="deal-description">Exclusive for SkyWay members: Premium flights and 5 nights at an overwater villa.</p>
+                            <a href="#" class="btn">Book Now</a>
+                        </div>
+                    </div>
+                    
+                    <div class="deal-card" data-category="seasonal">
+                        <div class="deal-badge">Fall Special</div>
+                        <div class="deal-img" style="background-image: url('assets/img/feature-d-3.jpg')"></div>
+                        <div class="deal-info">
+                            <div class="deal-destination">
+                                <h3>New York to Rome</h3>
+                                <div class="deal-dates">Valid: Sep 15 - Nov 30, 2023</div>
+                            </div>
+                            <div class="deal-price">
+                                <div class="original-price">$849</div>
+                                <div class="sale-price">$599</div>
+                                <div class="discount-tag">29% OFF</div>
+                            </div>
+                            <p class="deal-description">Experience Rome in the beautiful fall season with fewer crowds and great weather.</p>
+                            <a href="#" class="btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-container">
+                    <div class="newsletter-content">
+                        <h2>Get Exclusive Deals</h2>
+                        <p>Subscribe to our newsletter and be the first to know about our special offers and promotions.</p>
+                        <form class="newsletter-form-large">
+                            <input type="email" placeholder="Your Email Address">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SkyWay Airlines</h3>
+                    <p>Making your travel dreams come true since 2023.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Airport Road, Skyville</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@skywayairlines.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest deals and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SkyWay Airlines. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

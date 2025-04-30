@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Search Results - SkyWay Airlines</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><i class="fas fa-plane"></i> SkyWay Airlines</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="flights.html">Flights</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html" class="cta-button">Sign Up</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <div class="page-container">
+        <section class="search-results-header">
+            <div class="container">
+                <h2>Flight Search Results</h2>
+                <div class="search-summary" id="search-summary">
+                    <!-- Will be filled by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section class="search-filters">
+            <div class="container">
+                <div class="filters-container">
+                    <div class="filter-group">
+                        <h3>Price Range</h3>
+                        <div class="range-slider">
+                            <input type="range" min="100" max="2000" value="1000" class="price-range" id="price-range">
+                            <div class="price-values">
+                                <span>$100</span>
+                                <span id="price-value">$1000</span>
+                                <span>$2000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <h3>Airlines</h3>
+                        <div class="checkbox-filters">
+                            <label><input type="checkbox" checked> SkyWay Airlines</label>
+                            <label><input type="checkbox" checked> Delta Airlines</label>
+                            <label><input type="checkbox" checked> United Airlines</label>
+                            <label><input type="checkbox" checked> American Airlines</label>
+                            <label><input type="checkbox" checked> British Airways</label>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <h3>Departure Time</h3>
+                        <div class="checkbox-filters">
+                            <label><input type="checkbox" checked> Morning (6AM - 12PM)</label>
+                            <label><input type="checkbox" checked> Afternoon (12PM - 6PM)</label>
+                            <label><input type="checkbox" checked> Evening (6PM - 12AM)</label>
+                            <label><input type="checkbox" checked> Night (12AM - 6AM)</label>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <h3>Stops</h3>
+                        <div class="checkbox-filters">
+                            <label><input type="checkbox" checked> Non-stop</label>
+                            <label><input type="checkbox" checked> 1 Stop</label>
+                            <label><input type="checkbox" checked> 2+ Stops</label>
+                        </div>
+                    </div>
+                    <button class="apply-filters-btn">Apply Filters</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="search-results">
+            <div class="container">
+                <div class="sort-options">
+                    <span>Sort by:</span>
+                    <select id="sort-flights">
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option>
+                        <option value="duration-asc">Duration: Shortest</option>
+                        <option value="departure-asc">Departure: Earliest</option>
+                        <option value="arrival-asc">Arrival: Earliest</option>
+                    </select>
+                </div>
+                
+                <div class="flights-container" id="flights-container">
+                    <!-- Will be filled by JavaScript -->
+                </div>
+                
+                <div class="pagination">
+                    <button class="pagination-btn active">1</button>
+                    <button class="pagination-btn">2</button>
+                    <button class="pagination-btn">3</button>
+                    <button class="pagination-btn">Next</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SkyWay Airlines</h3>
+                    <p>Making your travel dreams come true since 2023.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Airport Road, Skyville</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@skywayairlines.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest deals and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SkyWay Airlines. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

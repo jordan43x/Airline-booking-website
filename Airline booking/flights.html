@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flights - SkyWay Airlines</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><i class="fas fa-plane"></i> SkyWay Airlines</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="flights.html" class="active">Flights</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html" class="cta-button">Sign Up</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <div class="page-container">
+        <section class="flights-search-section">
+            <div class="container">
+                <h2>Find Your Perfect Flight</h2>
+                <div class="flight-search-tabs">
+                    <button class="flight-tab active" data-tab="round-trip">Round Trip</button>
+                    <button class="flight-tab" data-tab="one-way">One Way</button>
+                    <button class="flight-tab" data-tab="multi-city">Multi-City</button>
+                </div>
+                
+                <div class="search-form flight-search-form">
+                    <div class="form-group">
+                        <label for="from">From</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-plane-departure"></i>
+                            <input type="text" id="from" placeholder="City or Airport">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="to">To</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-plane-arrival"></i>
+                            <input type="text" id="to" placeholder="City or Airport">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="depart">Depart</label>
+                        <div class="input-with-icon">
+                            <i class="far fa-calendar-alt"></i>
+                            <input type="date" id="depart">
+                        </div>
+                    </div>
+                    <div class="form-group return-date">
+                        <label for="return">Return</label>
+                        <div class="input-with-icon">
+                            <i class="far fa-calendar-alt"></i>
+                            <input type="date" id="return">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="passengers">Passengers</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-user"></i>
+                            <select id="passengers">
+                                <option value="1">1 Passenger</option>
+                                <option value="2">2 Passengers</option>
+                                <option value="3">3 Passengers</option>
+                                <option value="4">4 Passengers</option>
+                                <option value="5">5+ Passengers</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="class">Class</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-chair"></i>
+                            <select id="class">
+                                <option value="economy">Economy</option>
+                                <option value="premium">Premium Economy</option>
+                                <option value="business">Business</option>
+                                <option value="first">First Class</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="search-btn" id="search-flights-btn">Search Flights</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular-routes">
+            <div class="container">
+                <h2>Popular Routes</h2>
+                <div class="routes-grid">
+                    <div class="route-card">
+                        <div class="route-cities">
+                            <span class="from-city">New York</span>
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                            <span class="to-city">London</span>
+                        </div>
+                        <div class="route-details">
+                            <div class="route-info">
+                                <span><i class="fas fa-clock"></i> 7h 20m</span>
+                                <span><i class="fas fa-plane"></i> Daily</span>
+                            </div>
+                            <div class="route-price">From $449</div>
+                        </div>
+                        <a href="#" class="btn">View Flights</a>
+                    </div>
+                    
+                    <div class="route-card">
+                        <div class="route-cities">
+                            <span class="from-city">Los Angeles</span>
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                            <span class="to-city">Tokyo</span>
+                        </div>
+                        <div class="route-details">
+                            <div class="route-info">
+                                <span><i class="fas fa-clock"></i> 11h 40m</span>
+                                <span><i class="fas fa-plane"></i> Daily</span>
+                            </div>
+                            <div class="route-price">From $799</div>
+                        </div>
+                        <a href="#" class="btn">View Flights</a>
+                    </div>
+                    
+                    <div class="route-card">
+                        <div class="route-cities">
+                            <span class="from-city">Chicago</span>
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                            <span class="to-city">Paris</span>
+                        </div>
+                        <div class="route-details">
+                            <div class="route-info">
+                                <span><i class="fas fa-clock"></i> 8h 15m</span>
+                                <span><i class="fas fa-plane"></i> Daily</span>
+                            </div>
+                            <div class="route-price">From $529</div>
+                        </div>
+                        <a href="#" class="btn">View Flights</a>
+                    </div>
+                    
+                    <div class="route-card">
+                        <div class="route-cities">
+                            <span class="from-city">Miami</span>
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                            <span class="to-city">Rio de Janeiro</span>
+                        </div>
+                        <div class="route-details">
+                            <div class="route-info">
+                                <span><i class="fas fa-clock"></i> 8h 45m</span>
+                                <span><i class="fas fa-plane"></i> 4x Weekly</span>
+                            </div>
+                            <div class="route-price">From $599</div>
+                        </div>
+                        <a href="#" class="btn">View Flights</a>
+                    </div>
+                    
+                    <div class="route-card">
+                        <div class="route-cities">
+                            <span class="from-city">San Francisco</span>
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                            <span class="to-city">Sydney</span>
+                        </div>
+                        <div class="route-details">
+                            <div class="route-info">
+                                <span><i class="fas fa-clock"></i> 14h 35m</span>
+                                <span><i class="fas fa-plane"></i> 5x Weekly</span>
+                            </div>
+                            <div class="route-price">From $899</div>
+                        </div>
+                        <a href="#" class="btn">View Flights</a>
+                    </div>
+                    
+                    <div class="route-card">
+                        <div class="route-cities">
+                            <span class="from-city">Boston</span>
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                            <span class="to-city">Rome</span>
+                        </div>
+                        <div class="route-details">
+                            <div class="route-info">
+                                <span><i class="fas fa-clock"></i> 8h 10m</span>
+                                <span><i class="fas fa-plane"></i> Daily</span>
+                            </div>
+                            <div class="route-price">From $549</div>
+                        </div>
+                        <a href="#" class="btn">View Flights</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="flight-services">
+            <div class="container">
+                <h2>Our Flight Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Premium Dining</h3>
+                        <p>Enjoy chef-curated meals and premium beverages on all international flights.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <h3>In-flight Wi-Fi</h3>
+                        <p>Stay connected with high-speed internet access available on most flights.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-tv"></i>
+                        </div>
+                        <h3>Entertainment</h3>
+                        <p>Access hundreds of movies, TV shows, and games on our state-of-the-art entertainment system.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-bed"></i>
+                        </div>
+                        <h3>Comfort</h3>
+                        <p>Ergonomic seating with extra legroom and fully-reclining seats in premium classes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SkyWay Airlines</h3>
+                    <p>Making your travel dreams come true since 2023.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Airport Road, Skyville</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@skywayairlines.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest deals and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SkyWay Airlines. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

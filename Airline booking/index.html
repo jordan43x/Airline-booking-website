@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyWay Airlines - Book Your Flight</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="parallax-container">
+        <div class="parallax-bg"></div>
+        <header>
+            <div class="logo">
+                <h1><i class="fas fa-plane"></i> SkyWay Airlines</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="flights.html">Flights</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="deals.html">Deals</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html" class="cta-button">Sign Up</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h2 class="slide-in">Explore the World with SkyWay</h2>
+                <p class="fade-in">Discover amazing destinations with our premium flight experience</p>
+                <a href="register.html" class="cta-button pulse">Join Now</a>
+            </div>
+        </section>
+    </div>
+
+    <section class="search-section">
+        <div class="container">
+            <h2>Find Your Perfect Flight</h2>
+            <div class="search-form">
+                <div class="form-group">
+                    <label for="from">From</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-plane-departure"></i>
+                        <input type="text" id="from" placeholder="City or Airport">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="to">To</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-plane-arrival"></i>
+                        <input type="text" id="to" placeholder="City or Airport">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="depart">Depart</label>
+                    <div class="input-with-icon">
+                        <i class="far fa-calendar-alt"></i>
+                        <input type="date" id="depart">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="return">Return</label>
+                    <div class="input-with-icon">
+                        <i class="far fa-calendar-alt"></i>
+                        <input type="date" id="return">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="passengers">Passengers</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-user"></i>
+                        <select id="passengers">
+                            <option value="1">1 Passenger</option>
+                            <option value="2">2 Passengers</option>
+                            <option value="3">3 Passengers</option>
+                            <option value="4">4+ Passengers</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="search-btn" id="search-flights-btn">Search Flights</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-destinations">
+        <div class="container">
+            <h2>Popular Destinations</h2>
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <div class="destination-img" style="background-image: url('assets/img/feature-d-1.jpg')"></div>
+                    <div class="destination-info">
+                        <h3>Paris, France</h3>
+                        <p>From $499</p>
+                        <p class="destination-description">Experience the city of love with its iconic Eiffel Tower, world-class museums, and exquisite cuisine.</p>
+                        <a href="#" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-img" style="background-image: url('assets/img/feature-d-2.jpg')"></div>
+                    <div class="destination-info">
+                        <h3>Tokyo, Japan</h3>
+                        <p>From $799</p>
+                        <p class="destination-description">Discover the perfect blend of traditional culture and futuristic technology in Japan's vibrant capital.</p>
+                        <a href="#" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-img" style="background-image: url('assets/img/feature-d-3.jpg')"></div>
+                    <div class="destination-info">
+                        <h3>New York, USA</h3>
+                        <p>From $399</p>
+                        <p class="destination-description">Visit the city that never sleeps with its iconic skyline, Broadway shows, and diverse neighborhoods.</p>
+                        <a href="#" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-img" style="background-image: url('assets/img/feature-d-4.jpg')"></div>
+                    <div class="destination-info">
+                        <h3>Bali, Indonesia</h3>
+                        <p>From $699</p>
+                        <p class="destination-description">Relax on beautiful beaches, explore lush rice terraces, and immerse yourself in Balinese culture.</p>
+                        <a href="#" class="btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-container">
+                <div class="newsletter-content">
+                    <h2>Get Exclusive Deals</h2>
+                    <p>Subscribe to our newsletter and be the first to know about our special offers and promotions.</p>
+                    <form class="newsletter-form-large">
+                        <input type="email" placeholder="Your Email Address">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SkyWay Airlines</h3>
+                    <p>Making your travel dreams come true since 2023.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Airport Road, Skyville</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@skywayairlines.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest deals and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SkyWay Airlines. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
